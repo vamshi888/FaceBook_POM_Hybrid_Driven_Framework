@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.extentReports.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.fb.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyReelsLinkTest"/>
+          <include name="verifyHomePageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyUserNameTest"/>
+        </methods>
+      </class> <!-- com.fb.qa.testcases.HomePageTest -->
+      <class name="com.fb.qa.testcases.FindFriendsTest">
+        <methods>
+          <include name="verifySuggestionsLink"/>
+          <include name="verifyFindFriendsTitleTest"/>
+          <include name="verifyBirthdaysLink"/>
+          <include name="verifyFriendRequestLink"/>
+          <include name="verifyCustomsLink"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.fb.qa.testcases.FindFriendsTest -->
+      <class name="com.fb.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="multipleLoginTest" invocation-numbers="0 1 2 3"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.fb.qa.testcases.LoginPageTest -->
+      <class name="com.fb.qa.testcases.ReelsPageTest">
+        <methods>
+          <include name="verifyUserNameTest"/>
+          <include name="verifyReelsPageLabel"/>
+          <include name="selectReelsTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.fb.qa.testcases.ReelsPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
